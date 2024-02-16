@@ -10,21 +10,13 @@ body{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-
-
-    
     background: radial-gradient(circle at 10% 20%, rgb(90, 92, 106) 0%, rgb(32, 45, 58) 81.3%);
 }
 
 
 .glass{
-
     background-color: rgba(169, 185, 189, 0.24);
 }
 
 
 
-.curv{
-
-    border-radius: 8px;
-}

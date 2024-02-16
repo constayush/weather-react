@@ -1,14 +1,14 @@
 import React from 'react'
+import WeatherCard from './components/WeatherCard'
+import ForecastCard from './components/ForecastCard'
 
 function App() {
   return (
-    <div className=' wrapper w-screen h-screen flex flex-col lg:flex-row justify-center items-center gap-[2rem] p-[1rem] '>
+    <div className=' wrapper w-screen h-screen flex flex-col lg:flex-row justify-center items-center gap-[1rem] p-[1rem] '>
 
+      <WeatherCard />
 
-<div className='mainWeatherCard w-[20rem] lg:w-[50rem] h-[32.5rem] glass rounded-lg'></div>
-<div className='mainWeatherCard w-[20rem] lg:w-[30rem] h-[32.5rem] glass rounded-lg'></div>
-
-
+      <ForecastCard />
 
     </div>
   )

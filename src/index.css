@@ -5,18 +5,28 @@
 
 
 
-body{
+body {
 
+    color: aliceblue;
+
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    background: radial-gradient(circle at 10% 20%, rgb(90, 92, 106) 0%, rgb(32, 45, 58) 81.3%);
+    background: rgb(36,40,46);
+    background: linear-gradient(90deg, rgba(36,40,46,1) 0%, rgba(36,40,46,1) 30%, rgba(0,0,0,1) 100%);
 }
 
 
-.glass{
+.glass {
     background-color: rgba(169, 185, 189, 0.24);
+
+ 
 }
 
+.w400{
 
-
+  font-weight: 400;
+}

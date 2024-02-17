@@ -15,7 +15,7 @@ function ForecastCard() {
 
 <div className='searchbar w-full glassBlack h-[10%] rounded-lg flex '>
 
- <input className='w-full rounded-lg searchFeild' type='text'></input>
+ <input placeholder='Search for your city' className='w-full rounded-lg searchFeild' type='text'></input>
   <img className='w-[2.5rem] m-[1rem]' src={searchIcon}/>
 
  

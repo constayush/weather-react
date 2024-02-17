@@ -33,7 +33,14 @@ body {
 
 .searchFeild{
 
+    font-weight: 700;
+    padding: 1rem;
     background: rgba(240, 248, 255, 0);
+}
+
+.searchFeild:active{
+
+    border: none;
 }
 
 .glassBlack{

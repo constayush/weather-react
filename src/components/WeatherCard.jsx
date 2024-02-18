@@ -3,12 +3,15 @@ import SunnyImg from '../../public/images/clear.png'
 import windIcon from '../../public/images/windicon.svg'
 import humidityIcon from '../../public/images/humidityIcon.svg'
 import { useEffect } from 'react'
-
+import { useState } from 'react'
 
 function WeatherCard() {
 
+  const [currentData, setCurrentData] = useState({});
 
+  const [currentWeather, setCurrentWeather] = useState(0);  
 
+  const [currentWind, setCurrentWind] = useState(0);
 //   let latitude, longitude;
 
 
@@ -66,11 +69,28 @@ function WeatherCard() {
       }
       loco();
     }, []);
-  
-    const weatherDetails = async (weatherApi) => {
+
+
+
+
+   
+  const weatherDetails = async (weatherApi) => {
       let res = await fetch(weatherApi);
-      let resObj = await res.json();
-      console.log(resObj);
+      let data = await res.json();
+
+
+
+
+setCurrentData(data);
+
+
+setCurrentWeather(data.current.temperature_2m);
+
+
+setCurrentWind(data.current.wind_speed_10m);
+
+console.log(data)
+
     };
 
 
@@ -83,19 +103,21 @@ function WeatherCard() {
 
 
 
-
   return (
+
+
+    
     <div className='mainWeatherCard w-[20rem] lg:w-[50rem] h-[32.5rem] flex flex-col justify-center items-center gap-[1rem] rounded-lg'>
 
 
 
 
-      <div className='weatherDetailsSec w-full h-[50%] glass rounded-lg flex justify-between items-center p-[2rem]  lg:p-[4rem] '>
+      <div className='weatherDetailsSec w-full h-[50%] glass rounded-lg flex justify-between items-center p-[2rem]  lg:p-[6rem] '>
 
 
-        <img src={SunnyImg} className='weatherImg  w-[5rem] lg:w-[15rem]' />
+        <img src={SunnyImg} className='weatherImg  w-[5rem] lg:w-[12rem]' />
 
-        <h1 className='text-[4rem] lg:text-[10rem]'>10°c</h1>
+        <h1 className='text-[4rem] lg:text-[7rem]'>{currentWeather || 0}°c</h1>
 
 
       </div>
@@ -125,7 +147,7 @@ function WeatherCard() {
           <h1>wind speed</h1>
           <div className='flex '>
             <img src={windIcon} />
-            <h1>0km/h</h1>
+            <h1>{currentWind}km/h</h1>
           </div>
         </div>
 

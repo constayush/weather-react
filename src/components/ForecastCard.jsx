@@ -2,7 +2,7 @@ import React from 'react'
 import searchIcon from '../../public/images/searchIcon.svg'
 function ForecastCard() {
   return (
-<div className='mainWeatherCard w-[20rem] lg:w-[30rem] h-[32.5rem] glass rounded-lg p-4'>
+<div className='mainWeatherCard w-[18rem] lg:w-[30rem] h-[32.5rem] glass rounded-lg p-4'>
 
 
 

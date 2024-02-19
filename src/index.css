@@ -53,8 +53,9 @@ body {
     background-color: rgba(169, 185, 189, 0.319);
 }
 
-#root{
+.dimText{
 
+    color: rgb(185, 193, 195);
 
 
 }

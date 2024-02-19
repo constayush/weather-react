@@ -130,22 +130,22 @@ function WeatherCard() {
       <div className='weatherOnTimeSec w-full h-[30%] glass flex justify-between rounded-lg p-[1rem] lg:p-[2rem] text-[.9rem] lg:text-[1.5rem]    ' >
 
 
-        <div className='flex flex-col justify-center items-center font-normal'><p className=''>{currentTime + 1}:00</p><h1 className='text-[.75rem] font-semibold dimText'>{Math.round(currentHourly[currentTime + 1])}°c</h1></div>
+        <div className='flex flex-col justify-center items-center font-normal'><p className=''>{currentTime + 1}:00</p><h1 className='text-[.75rem] lg:text-[1.25rem] font-semibold dimText'>{Math.round(currentHourly[currentTime + 1])}°c</h1></div>
 
 
-        <div className='flex flex-col justify-center items-center font-normal'><p className=''>{currentTime + 2}:00</p><h1 className='text-[.75rem] font-semibold dimText'>{Math.round(currentHourly[currentTime + 2])}°c</h1></div>
+        <div className='flex flex-col justify-center items-center font-normal'><p className=''>{currentTime + 2}:00</p><h1 className='text-[.75rem] lg:text-[1.25rem] font-semibold dimText'>{Math.round(currentHourly[currentTime + 2])}°c</h1></div>
 
 
-        <div className='flex flex-col justify-center items-center font-normal'><p className=''>{currentTime + 3}:00</p><h1 className='text-[.75rem] font-semibold dimText'>{Math.round(currentHourly[currentTime + 3])}°c</h1></div>
+        <div className='flex flex-col justify-center items-center font-normal'><p className=''>{currentTime + 3}:00</p><h1 className='text-[.75rem] lg:text-[1.25rem] font-semibold dimText'>{Math.round(currentHourly[currentTime + 3])}°c</h1></div>
 
 
-        <div className='flex flex-col justify-center items-center font-normal'><p className=''>{currentTime + 4}:00</p><h1 className='text-[.75rem] font-semibold dimText'>{Math.round(currentHourly[currentTime + 4])}°c</h1></div>
+        <div className='flex flex-col justify-center items-center font-normal'><p className=''>{currentTime + 4}:00</p><h1 className='text-[.75rem] lg:text-[1.25rem] font-semibold dimText'>{Math.round(currentHourly[currentTime + 4])}°c</h1></div>
 
 
-        <div className='flex flex-col justify-center items-center font-normal'><p className=''>{currentTime + 5}:00</p><h1 className='text-[.75rem] font-semibold dimText'>{Math.round(currentHourly[currentTime + 5])}°c</h1></div>
+        <div className='flex flex-col justify-center items-center font-normal'><p className=''>{currentTime + 5}:00</p><h1 className='text-[.75rem] lg:text-[1.25rem] font-semibold dimText'>{Math.round(currentHourly[currentTime + 5])}°c</h1></div>
 
 
-        <div className='flex flex-col justify-center items-center font-normal'><p className=''>{currentTime + 6}:00</p><h1 className='text-[.75rem] font-semibold dimText'>{Math.round(currentHourly[currentTime + 6])}°c</h1></div>
+        <div className='flex flex-col justify-center items-center font-normal'><p className=''>{currentTime + 6}:00</p><h1 className='text-[.75rem] lg:text-[1.25rem]  font-semibold dimText'>{Math.round(currentHourly[currentTime + 6])}°c</h1></div>
       </div>
 
 

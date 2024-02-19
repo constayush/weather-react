@@ -1,6 +1,6 @@
 import React from 'react'
 import SunnyImg from '../../public/images/clear.png'
-import windIcon from '../../public/images/windicon.svg'
+import windIcon from '../../public/images/windIcon.svg'
 import humidityIcon from '../../public/images/humidityIcon.svg'
 import { useEffect } from 'react'
 import { useState } from 'react'
